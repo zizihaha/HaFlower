@@ -1,0 +1,47 @@
+.red{
+  color: red;
+}
+
+.productText{
+  margin-left: 1rem;
+}
+
+.orderText{
+  display: flex;
+  justify-content: space-between;
+}
+
+.quantity{
+  padding-right: 3rem;
+}
+
+@media (max-width: 768px){
+
+  .productImg{
+    display: none;
+  }
+  .productText{
+    margin-left: 0;
+  }
+  .orderText{
+    display: block;
+    
+  }
+  .quantity{
+    padding-right: 0;
+  }
+  input[type=number]{
+    padding: 0;
+  }
+
+}
+
+@media (max-width: 575.98px){
+  .orderText{
+    display: flex;
+    
+  }
+  .productTr{
+    text-align: center;
+  }
+}
