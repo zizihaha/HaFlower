@@ -1,5 +1,5 @@
 ## 電商網站 : HA-flower
-#### Demo : https://zizihaha.github.io/ec_flower/#/
+#### Demo : https://zizihaha.github.io/HaFlower/#/
 
 
 ## 使用技術
