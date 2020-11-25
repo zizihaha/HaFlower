@@ -1,0 +1,30 @@
+.logo{
+  font-size: 20px;
+  @include media-breakpoint-up(sm) {
+    font-size: 16px;
+  }
+}
+
+.fade-out {
+  transition: all 0.5s ease-out;
+  padding: 10px 0;
+}
+
+.navBg-light {
+  padding: 0;
+  background-color: #f2f2f2;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  transform: translateY(-0px);
+  transition: 0.3s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #7e362c;
+  transform: translateY(0px);
+  @include media-breakpoint-up(sm) {
+    transform: translateY(-10px);
+  }
+}

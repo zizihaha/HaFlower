@@ -169,7 +169,7 @@
             </div>
 
             <div
-              class="d-flex flex-column-reverse flex-md-row mt-4 justify-content-between align-items-md-center align-items-end d-w-100"
+              class="d-flex flex-column-reverse flex-md-row mt-4 justify-content-between align-items-md-center d-w-100"
             >
               <router-link class="text-dark mt-md-0 mt-3" to="/cart">
                 <i class="fas fa-chevron-left mr-2"></i>上一步

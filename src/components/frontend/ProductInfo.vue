@@ -36,7 +36,7 @@
         </div>
       </div>
       <div class="col-md-4 mt-md-4">
-        <div class="card border-0">
+        <div class="card border-0 mb-4">
           <a href="#" @click.prevent="toCategory('婚禮佈置')">
             <img
               v-lazy="img[2]"

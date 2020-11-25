@@ -6,7 +6,7 @@
           class="navbar-brand font-weight-bold text-primary"
           to="/"
           exact
-          ><h1 class="m-0">HA.Flower</h1></router-link
+          ><h1 class="logo m-0">HA.Flower</h1></router-link
         >
         <button
           class="navbar-toggler"
@@ -119,25 +119,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-h1 {
-  font-size: 20px;
-}
-
-.fade-out {
-  transition: all 0.5s ease-out;
-  padding: 10px 0;
-}
-
-.navBg-light {
-  padding: 0;
-  background-color: #f2f2f2;
-  /* background-color: #cfbdaa; */
-  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-  color: #7e362c;
-}
-</style>

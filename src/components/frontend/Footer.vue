@@ -6,14 +6,20 @@
           class="d-flex flex-column flex-md-row justify-content-between align-items-md-center align-items-start"
         >
           <p class="mb-0 font-weight-bold">訂閱我們-獲得最新優惠</p>
+
           <div class="input-group w-md-50 mt-md-0 mt-3">
             <input
               type="email"
               class="form-control rounded-0"
               placeholder="請輸入 e-mail"
+              v-model="userEmail"
             />
             <div class="input-group-append">
-              <button class="btn btn-primary rounded-0" type="button">
+              <button
+                class="btn btn-primary rounded-0"
+                type="submit"
+                @click="subscribe"
+              >
                 <i class="fas fa-paper-plane"> 訂閱</i>
               </button>
             </div>
@@ -69,7 +75,19 @@
 export default {
   name: 'Footer',
   data() {
-    return {};
+    return {
+      userEmail: ''
+    };
+  },
+  methods: {
+    subscribe() {
+      if (this.userEmail != '') {
+        this.$bus.$emit('message:push', '訂閱成功，感謝您的訂閱', 'success');
+        this.userEmail = '';
+      } else {
+        this.$bus.$emit('message:push', '哎呀，好像還沒輸入email呢', 'danger');
+      }
+    }
   }
 };
 </script>

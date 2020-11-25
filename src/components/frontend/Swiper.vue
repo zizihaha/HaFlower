@@ -6,7 +6,7 @@
         @click.native="goProduct"
         class="text-decoration-none text-dark"
       >
-        <div class="card" style="width: 16rem;">
+        <div class="card mx-sm-0 mx-md-2">
           <img :src="item.imageUrl" class="card-img-top" :alt="item.title" />
           <div class="card-body">
             <h5 class="card-title">{{ item.title }}</h5>

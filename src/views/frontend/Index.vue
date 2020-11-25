@@ -1,27 +1,5 @@
 <template>
   <div>
-    <!-- <div
-      class="position-absolute"
-      style="top:0; bottom:0; left:0; right:0; background-size: cover; 
-        background-image: url(https://images.unsplash.com/photo-1448724133127-81fbec83d1ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
-        background-position: center center; opacity: 0.3; z-index: -1; background-attachment: fixed;"
-    ></div>
-    
-    <div class="container d-flex flex-column" style="min-height: 100vh;">
-      <div class="row justify-content-center my-auto">
-        <div class="col-md-4 text-center">
-          <h2>2020 Merry Christmas</h2>
-          <p class="text-muted mb-0">
-            送另一半專屬的許願星星，聖誕花束預購中
-          </p>
-          <router-link to="/products">
-            <button class="btn btn-primary rounded-0 mt-6">
-              more
-            </button>
-          </router-link>
-        </div>
-      </div>
-    </div> -->
     <div
       class="banner mb-7"
       style="height:100vh; background: url(https://images.unsplash.com/photo-1512331283953-19967202267a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80) fixed no-repeat center / cover; "
@@ -48,8 +26,7 @@
 
     <ProductInfo></ProductInfo>
 
-    <!-- 花語介紹 -->
-    <!-- <div class="mt-5 text-dark" style="background-color: #e1e8ee;">
+    <div class="mt-md-4 mb-5 text-dark" style="background-color: #DBDFD7;">
       <div class="container">
         <div
           id="carouselExampleControls"
@@ -60,37 +37,33 @@
             <div class="carousel-item active">
               <div class="row justify-content-center py-7">
                 <div class="col-md-6 text-center">
-                  <h3>百合花語</h3>
+                  <h3>冬季限定! 迷霧蕾絲捧花</h3>
                   <p class="my-5">
-                    “順利、心想事成、祝福”
+                    “蕾絲捧花真的超美的，顏色可以客製化跟我禮服超搭”
                   </p>
-                  <p><small>— 百合花語 —</small></p>
+                  <p><small>— 台中 Lillian —</small></p>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="row justify-content-center py-7">
                 <div class="col-md-6 text-center">
-                  <h3>Lorem ipsum.</h3>
+                  <h3>粉嫩色系鮮花手腕花</h3>
                   <p class="my-5">
-                    “Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                    sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                    magna aliquyam erat.”
+                    “手腕花好加分，超像國外參加舞會的感覺，伴娘們超愛”
                   </p>
-                  <p><small>—Lorem ipsum dolor sit amet.—</small></p>
+                  <p><small>— 台北 kiki —</small></p>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="row justify-content-center py-7">
                 <div class="col-md-6 text-center">
-                  <h3>Lorem ipsum.</h3>
+                  <h3>小驚喜花花世界捧花</h3>
                   <p class="my-5">
-                    “Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                    sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                    magna aliquyam erat.”
+                    “沒抽到捧花的朋友都一直問到底在哪裡買的捧花，超喜歡”
                   </p>
-                  <p><small>—Lorem ipsum dolor sit amet.—</small></p>
+                  <p><small>— 高雄 coco —</small></p>
                 </div>
               </div>
             </div>
@@ -115,7 +88,7 @@
           </a>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <!-- 店貓介紹 -->
     <div class="container my-4">

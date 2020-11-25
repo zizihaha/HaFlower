@@ -10,71 +10,66 @@
         style="top:0; bottom: 0; left: 0; right: 0; opacity: 0.3;
         background: url(https://images.unsplash.com/photo-1518199266791-5375a83190b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80) fixed no-repeat center / cover; "
       ></div>
+      <h3 class="mt-4" style="color:#8c7e7e;">收 藏 清 單</h3>
     </div>
     <div class="container">
-      <div class="row">
-        <div class="pt-5">
-          <div class="row">
-            <div
-              class="col-md-4 mt-6"
-              v-for="item in favProducts"
-              :key="item.id"
-            >
-              <div
-                class="card border-0 mb-4 position-relative position-relative"
-              >
-                <router-link :to="`/product/${item.title}/${item.id}`">
-                  <img
-                    :src="item.imageUrl"
-                    class="card-img-top rounded-0"
-                    :alt="item.title"
-                  />
-                </router-link>
-                <a href="#" class="text-dark" @click.prevent="delfav(item)">
-                  <i
-                    class="fas fa-heart position-absolute text-white"
-                    style="right: 16px; top: 16px"
-                  ></i>
-                </a>
-                <a href="#" class="text-dark" @click.prevent="addToCart(item)">
-                  <i
-                    class="fas fa-shopping-cart position-absolute text-white"
-                    style="right: 50px; top: 16px"
-                  ></i>
-                </a>
-                <div class="card-body p-0 my-3">
-                  <h4 class="mb-0">
-                    <a
-                      href="#"
-                      class="text-decoration-none"
-                      @click.prevent="goPage(item)"
-                      >{{ item.title }}</a
-                    >
-                  </h4>
-                  <p class="card-text">
-                    NT{{ item.price | currency }}
-                    <span class="text-muted ml-1"
-                      ><del>NT{{ item.origin_price | currency }}</del></span
-                    >
-                  </p>
-                </div>
-              </div>
+      <div class="row pt-md-5">
+        <div
+          class="col-md-4 mt-md-6 "
+          v-for="item in favProducts"
+          :key="item.id"
+        >
+          <div class="card border-0 mb-4 position-relative position-relative">
+            <router-link :to="`/product/${item.title}/${item.id}`">
+              <img
+                :src="item.imageUrl"
+                class="card-img-top rounded-0"
+                :alt="item.title"
+              />
+            </router-link>
+            <a href="#" class="text-dark" @click.prevent="delfav(item)">
+              <i
+                class="fas fa-heart position-absolute text-white"
+                style="right: 16px; top: 16px"
+              ></i>
+            </a>
+            <a href="#" class="text-dark" @click.prevent="addToCart(item)">
+              <i
+                class="fas fa-shopping-cart position-absolute text-white"
+                style="right: 50px; top: 16px"
+              ></i>
+            </a>
+            <div class="card-body p-0 my-3">
+              <h4 class="mb-0">
+                <a
+                  href="#"
+                  class="text-decoration-none"
+                  @click.prevent="goPage(item)"
+                  >{{ item.title }}</a
+                >
+              </h4>
+              <p class="card-text">
+                NT{{ item.price | currency }}
+                <span class="text-muted ml-1"
+                  ><del>NT{{ item.origin_price | currency }}</del></span
+                >
+              </p>
             </div>
           </div>
-
-          <div v-if="!favProducts.length">
-            <p class="text-center pb-1">
-              目前沒有收藏的商品喔，
-              <router-link
-                class="text-decoration-none text-success font-weight-bold"
-                to="/products"
-              >
-                去產品頁逛逛吧!
-              </router-link>
-            </p>
-            <ProductInfo></ProductInfo>
-          </div>
         </div>
+      </div>
+
+      <div v-if="!favProducts.length">
+        <p class="text-center my-5">
+          目前沒有收藏的商品喔，
+          <router-link
+            class="text-decoration-none text-success font-weight-bold"
+            to="/products"
+          >
+            去產品頁逛逛吧!
+          </router-link>
+        </p>
+        <ProductInfo></ProductInfo>
       </div>
     </div>
   </div>

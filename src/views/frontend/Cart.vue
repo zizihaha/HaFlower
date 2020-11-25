@@ -12,7 +12,7 @@
       ></div>
     </div>
     <div class="container">
-      <div class="pt-5">
+      <div class="pt-md-5">
         <div v-if="carts.length" class="mb-4">
           <h3 class="my-4">購物清單</h3>
           <div class="row">
@@ -41,7 +41,7 @@
                       <router-link :to="`/product/${item.product.id}`">
                         <img
                           class="productImg"
-                          :src="item.product.imageUrl"
+                          v-lazy="item.product.imageUrl[0]"
                           :alt="item.product.title"
                           style="width: 72px; height: 72px; object-fit: cover;"
                         />
@@ -56,7 +56,7 @@
                       <div class="input-group quantity">
                         <div class="input-group-prepend">
                           <button
-                            class="btn btn-outline-dark border-0 py-1"
+                            class="btn border-0 py-1"
                             type="button"
                             id="button-addon1"
                             :disabled="item.quantity < 2"
@@ -92,7 +92,7 @@
                         " -->
                         <div class="input-group-append">
                           <button
-                            class="btn btn-outline-dark border-0 py-1"
+                            class="btn border-0 py-1"
                             type="button"
                             id="button-addon2"
                             @click="
@@ -185,7 +185,7 @@
             </div>
           </div>
         </div>
-        <p v-else-if="noProduct" class="text-center">
+        <p v-else-if="noProduct" class="text-center my-5">
           購物車內沒有商品喔，
           <router-link
             class="text-decoration-none text-success font-weight-bold"
