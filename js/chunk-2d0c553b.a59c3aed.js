@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0c553b"],{"3f2d":function(n,t,e){"use strict";e.r(t);var a=function(){var n=this,t=n.$createElement;n._self._c;return n._m(0)},c=[function(){var n=this,t=n.$createElement,e=n._self._c||t;return e("div",{staticClass:"container mt-5"},[e("h2",[n._v("管理後台的圖片列表頁面")])])}],r={name:"Storages",data:function(){return{}}},s=r,u=e("2877"),i=Object(u["a"])(s,a,c,!1,null,null,null);t["default"]=i.exports}}]);
+//# sourceMappingURL=chunk-2d0c553b.a59c3aed.js.map
